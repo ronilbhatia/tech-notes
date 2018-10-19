@@ -17,7 +17,7 @@
   * `render()`
   * `componentDidMount()`
 
-  *Note - `componentWillUnmount` is deprecated and no longer considered safe to use*
+  *Note - `componentWillMount` is deprecated and no longer considered safe to use*
 * order of methods when component is updating
   * `static getDerivedStateFromProps()`
   * `shouldComponentUpdate()`
