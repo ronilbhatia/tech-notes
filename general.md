@@ -14,3 +14,17 @@
     * *Mail Server* - application that receives incoming e-mail from local users and forwards outgoing e-mail for delivery
     * *File server* - computer responsible for the central storage and management of data files so that other computers on the same network can access them
 * **Thread** - short for *thread of execution*. A way for a program to divide itself into two or more simultaneously running tasks. Differ from *processes* in that a thread is contained inside a process, which itself can contain multiple threads sharing the same resources.
+
+### Types of languages
+* **Programming Language** - a language used to run a computer program, that contains logic to perform different functions/sub-routines under different circumstances of conditions.
+  * Examples: C, C++, Java, Ruby, Python
+* **Scripting Language** - a sub-category of programming languages that are compiled or interpreted (or a combination of both) on the client (user's computer). Programming languages such as C are pre-compiled - this means that various versions need to be created to be compatible with different operating systems/hardware configurations in order to work across different platforms. Scripting languages are advantageous in that only one version needs to be written for universal compatibility. The downside is that it makes the source code available to the client, since it is being sent over directly to be compiled/interpreted. All scripting languages are programming languages, but not all programming languages are scripting languages.
+  * Examples: JavaScript, PHP, SQL, HHVM
+* **Markup Language** - a presentational language used to format text
+  * Examples: HTML, CSS, Markdown
+
+### Interpretation vs Compilation
+* The programming language is separate from the way that it is implemented. In the 90s JavaScript was interpreted, in the modern day with the V8 engine, it is JIT compiled
+* **Interpretation** - has all functions in the program pre-defined, and it starts running instructions step-by-step, and runs them one-by-one, translating each function to machine code (i.e. *compiling*) one-by one, constantly switching back and forth between the script and the machine instructions -- SLOW, but easy to debug because you know exactly where your code broke.
+* **Compilation** - entire program is compiled into machine code and run -- FAST, once program is compiled it runs very quickly as there is no delay in constantly needing to convert instructions to machine code. Harder to debug because program will continue running past where code broke.
+* **JIT Compilation** - hybrid between interpretation and compilation - makes it easy to debug through interpretation, but the advantage of speed from having your code compiled. Not quite as fast as true compilation, but makes code easier to maintain. Essentially pre-compiles each instruction one-by-one, and alerts you if anything fails along the way instead of continuing to compile through the end of the program as a traditional compiler would.
